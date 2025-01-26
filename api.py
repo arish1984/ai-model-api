@@ -7,7 +7,7 @@ import numpy as np
 app = Flask(__name__)
 
 # Load the saved model
-model = load_model('E:/ai model/ai_model.h5')
+model = load_model('ai_model.h5')
 
 @app.route('/predict', methods=['POST'])
 def predict():
