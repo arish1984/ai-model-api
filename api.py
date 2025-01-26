@@ -1,3 +1,5 @@
+import os
+os.environ["CUDA_VISIBLE_DEVICES"] = "-1"
 from flask import Flask, request, jsonify
 from tensorflow.keras.models import load_model
 import numpy as np
